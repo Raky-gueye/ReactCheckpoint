@@ -1,70 +1,87 @@
-# Getting Started with Create React App
+# ServiceHub — React Services Catalogue
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+ServiceHub is a responsive service catalogue built with React. It presents a collection of digital services and lets visitors search and filter them by category.
 
-## Available Scripts
+## Features
 
-In the project directory, you can run:
+- Responsive layout for desktop, tablet and mobile screens
+- Reusable navigation, header and service-card components
+- Dynamic rendering of service cards from a JavaScript data array
+- Instant search across service names, descriptions, categories and technology tags
+- Category filters
+- Empty state with a reset action when no service matches
 
-### `npm start`
+## Technologies
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- React
+- JavaScript (ES6+)
+- React Hooks: `useState` and `useMemo`
+- React-Bootstrap
+- Bootstrap 5
+- CSS3
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Getting started
 
-### `npm test`
+### Prerequisites
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- Node.js
+- npm
 
-### `npm run build`
+### Installation
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Clone the repository and install its dependencies:
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+```bash
+git clone https://github.com/Raky-gueye/ReactCheckpoint.git
+cd ReactCheckpoint
+npm install
+```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### Run locally
 
-### `npm run eject`
+```bash
+npm start
+```
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+The application will be available at [http://localhost:3000](http://localhost:3000).
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### Production build
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+```bash
+npm run build
+```
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## Project structure
 
-## Learn More
+```text
+src/
+├── App.jsx       # Application state, service data and filtering
+├── Card.jsx      # Reusable service card
+├── Headers.jsx  # Hero section
+├── Navbar.jsx   # Responsive navigation
+├── index.css    # Application styles and responsive rules
+└── index.js     # React entry point
+```
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## Learning objectives
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+This project demonstrates foundational React concepts:
 
-### Code Splitting
+- Creating and composing functional components
+- Passing data through props
+- Rendering collections with `map()` and stable keys
+- Managing UI state with `useState`
+- Deriving filtered data with `useMemo`
+- Handling user input and button events
+- Building a responsive interface
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+## Author
 
-### Analyzing the Bundle Size
+**Raky Gueye**  
+Junior Software Developer | Backend & Mobile Development
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+GitHub: [Raky-gueye](https://github.com/Raky-gueye)
 
-### Making a Progressive Web App
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+This is a portfolio and learning project. The displayed services are sample content.
