@@ -1,15 +1,24 @@
 import React from "react";
-import { Card } from "react-bootstrap";
 
-function CardComponent({ title, description, image }) {
+function CardComponent({ service }) {
+  const { title, description, category, icon, tags } = service;
+
   return (
-    <Card style={{ width: "18rem" }}>
-      <Card.Img variant="top" src={image} />
-      <Card.Body>
-        <Card.Title>{title}</Card.Title>
-        <Card.Text>{description}</Card.Text>
-      </Card.Body>
-    </Card>
+    <article className="service-card">
+      <div className="card-topline">
+        <span className="service-icon" aria-hidden="true">{icon}</span>
+        <span className="category-label">{category}</span>
+      </div>
+      <div className="service-card-content">
+        <h3>{title}</h3>
+        <p>{description}</p>
+      </div>
+      <div className="tag-list">
+        {tags.map((tag) => (
+          <span className="technology-tag" key={tag}>{tag}</span>
+        ))}
+      </div>
+    </article>
   );
 }
 
