@@ -14,8 +14,8 @@ function Navigation() {
           <Nav className="ms-auto align-items-lg-center">
             <Nav.Link href="#home">Accueil</Nav.Link>
             <Nav.Link href="#services">Services</Nav.Link>
-            <a className="nav-contact" href="mailto:contact@example.com">
-              Nous contacter
+            <a className="nav-contact" href="#services">
+              Voir les services
             </a>
           </Nav>
         </Navbar.Collapse>
